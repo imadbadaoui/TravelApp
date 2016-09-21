@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WS_ENDPOINT</key>
+	<string>https://api.myjson.com/bins</string>
+	<key>WS_ITEMS</key>
+	<dict>
+		<key>WS_GET_TRAINS</key>
+		<dict>
+			<key>WS_METHOD</key>
+			<string>GET</string>
+			<key>WS_PATH</key>
+			<string>/3zmcy</string>
+		</dict>
+		<key>WS_GET_BUSES</key>
+		<dict>
+			<key>WS_METHOD</key>
+			<string>GET</string>
+			<key>WS_PATH</key>
+			<string>/37yzm</string>
+		</dict>
+		<key>WS_GET_FLIGHTS</key>
+		<dict>
+			<key>WS_METHOD</key>
+			<string>GET</string>
+			<key>WS_PATH</key>
+			<string>/w60i</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

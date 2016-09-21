@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ffm-u9-e6i">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Berlin - Munich-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0q4-IS-DrG">
+                                <rect key="frame" x="0.0" y="706" width="414" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.87038590604026844" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SmF-Jo-5JS"/>
+                                </constraints>
+                                <state key="normal" title="Sort">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sortTable:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cRG-wY-2fV"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="115" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZLq-Kz-njz">
+                                <rect key="frame" x="0.0" y="109" width="414" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DZA-fv-JkK">
+                                <rect key="frame" x="20" y="64" width="374" height="29"/>
+                                <segments>
+                                    <segment title="Flights"/>
+                                    <segment title="Buses"/>
+                                    <segment title="Trains"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeActionTab:" destination="BYZ-38-t0r" eventType="valueChanged" id="v8B-JD-TOw"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DZA-fv-JkK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="8xD-5B-XkV"/>
+                            <constraint firstItem="DZA-fv-JkK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="AJa-C3-u8d"/>
+                            <constraint firstItem="DZA-fv-JkK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Azl-Mi-aPy"/>
+                            <constraint firstItem="DZA-fv-JkK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="H1V-K7-KsC"/>
+                            <constraint firstItem="ZLq-Kz-njz" firstAttribute="leading" secondItem="0q4-IS-DrG" secondAttribute="leading" id="LyO-Ke-pzb"/>
+                            <constraint firstItem="0q4-IS-DrG" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="akg-P7-hDg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZLq-Kz-njz" secondAttribute="bottom" constant="29" id="bJC-d0-qVC"/>
+                            <constraint firstItem="ZLq-Kz-njz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hdH-V7-kB1"/>
+                            <constraint firstItem="ZLq-Kz-njz" firstAttribute="top" secondItem="DZA-fv-JkK" secondAttribute="bottom" constant="17" id="hzW-xB-9hC"/>
+                            <constraint firstItem="ZLq-Kz-njz" firstAttribute="trailing" secondItem="0q4-IS-DrG" secondAttribute="trailing" id="ikD-nB-KzI"/>
+                            <constraint firstItem="ZLq-Kz-njz" firstAttribute="centerX" secondItem="DZA-fv-JkK" secondAttribute="centerX" id="xjK-dp-UKT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Berlin - Munich" id="JSb-is-UvS"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="TableOfData" destination="ZLq-Kz-njz" id="FBM-YG-Oo5"/>
+                        <outlet property="segmentedControllerTab" destination="DZA-fv-JkK" id="faa-Fx-RTo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1098" y="16"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xoy-Gc-9zt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ffm-u9-e6i" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="d3g-x6-wFW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="O7Z-QA-Rpy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cfN-X8-9xL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="286" y="16"/>
+        </scene>
+    </scenes>
+</document>

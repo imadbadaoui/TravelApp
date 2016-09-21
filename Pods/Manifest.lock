@@ -1,0 +1,44 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - HMSegmentedControl (1.5.3)
+  - JSONModel (1.5.1)
+  - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
+  - Realm (1.1.0):
+    - Realm/Headers (= 1.1.0)
+  - Realm/Headers (1.1.0)
+  - XLPagerTabStrip (2.0.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - HMSegmentedControl
+  - JSONModel
+  - Masonry
+  - MBProgressHUD
+  - Realm
+  - XLPagerTabStrip
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
+  JSONModel: fd2553dc9e6608a3f35bfc956a14be35395d3852
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  Realm: ceecf1a4540c4ce9efe196fe73fa9855bce05bd8
+  XLPagerTabStrip: 2c69b8e3208432a94e713c198ce597faad5a87bb
+
+COCOAPODS: 0.39.0

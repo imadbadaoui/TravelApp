@@ -1,0 +1,34 @@
+//
+//  Travel-Prefix.pch
+//  TravelApp
+//
+//  Created by Imad Badaoui on 20/09/2016.
+//  Copyright © 2016 Imad Badaoui. All rights reserved.
+//
+
+#ifndef Travel_Prefix_pch
+#define Travel_Prefix_pch
+
+#import "AppDelegate.h"
+// Categories
+#import "RLMObject+JSONModel.h"
+#import "NSArray+Change.h"
+#import "RLMResults+Array.h"
+
+// WS
+#import "TRAVELWSConfiguration.h"
+
+// Modèles
+#import <JSONModel.h>
+
+#import "TRAVELRItemModel.h"
+#import "TRAVELRBuses.h"
+#import "TRAVELRTrains.h"
+#import "TRAVELRFlights.h"
+#import "TRAVELItemModel.h"
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Travel_Prefix_pch */
